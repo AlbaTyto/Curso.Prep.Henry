@@ -1,0 +1,5 @@
+* Variables: Son espacios que se arman para poner valores. Esos valores pueden cambiar. Despues se puede nombrar esos espacios, para usar lo que tengan adentro.
+* Strings: Cadenas de texto. Son las palabras que usemos sin que tengan significado para la maquina.
+* Funciones (argumentos, `return`) Son las recetas de las acciones que se le encarga a la maquina. (Los argumentos son los parametros que le damos para trabajar a la funcion. 'return es un argumento que le podemos dar a la función para que devuelva un resultado, dandole final a la lectura de la funcion')
+* Declaraciones `if`. If es la funcion que indica un orden logico para que el sistema responda.
+* Valores booleanos (`true`, `false`). Son binarios, solo pueden tener dos formas posibles. Verdadero o falso, si o no.
