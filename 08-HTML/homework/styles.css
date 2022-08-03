@@ -1,5 +1,15 @@
+body{
+    background-size: 1350px;
+    background-color: transparent;
+    background-image: url(https://www.quepasasalta.com.ar/files/image/161/161256/6245b00c5702e.png);
+    width: 600px;
+    margin: 0 auto;
+}
 h1{
     color:brown;
+}
+div{
+    text-align: center;
 }
 img{
     width: 400px;
