@@ -10,15 +10,33 @@ function deObjetoAmatriz(objeto){
       C: 3
     }) ➞ [["D", 1], ["B", 2], ["C", 3]]*/
   //Escribe tu código aquí
+  var matr = [];
+  for (let clv in objeto) {
+    matr.push([clv,objeto[clv]]);
+  }
+  return matr;
 }
-
 
 function numberOfCharacters(string) {
   //La función recibe un string. Recorre el srting y devuelve el caracter con el número de veces que aparece 
   //en formato par clave-valor.
   //Ej: Recibe ---> "adsjfdsfsfjsdjfhacabcsbajda" || Devuelve ---> { a: 5, b: 2, c: 2, d: 4, f: 4, h:1, j: 4, s: 5 } 
   //Escribe tu código aquí
+  var ob = {};
+  for ( i = 0; i < string.length; i++){
+    if (ob[string[i]] === undefined){
+      var cont = 1;
+      ob[string[i]] = cont;
+    } else {
+      var cont = (ob[string[i]]+1);
+      ob[string[i]] = cont;
+    }
+  }
+  return ob;
 }
+
+
+
 
 
 function capToFront(s) {
