@@ -22,14 +22,12 @@ function numberOfCharacters(string) {
   //en formato par clave-valor.
   //Ej: Recibe ---> "adsjfdsfsfjsdjfhacabcsbajda" || Devuelve ---> { a: 5, b: 2, c: 2, d: 4, f: 4, h:1, j: 4, s: 5 } 
   //Escribe tu código aquí
-  var ob = {};
+  let ob = {};
   for ( i = 0; i < string.length; i++){
     if (ob[string[i]] === undefined){
-      var cont = 1;
-      ob[string[i]] = cont;
+      ob[string[i]] = 1;
     } else {
-      var cont = (ob[string[i]]+1);
-      ob[string[i]] = cont;
+      ob[string[i]] = (ob[string[i]]+1);
     }
   }
   return ob;
@@ -44,6 +42,9 @@ function capToFront(s) {
   //al principio de la palabra.
   //Ejemplo: soyHENRY -> HENRYsoy
   //Escribe tu código aquí
+  let uno = s.match(/\p{Lu}/gu);
+  let dos = s.match(/\p{Ll}/gu);
+  return uno.join('')+dos.join('');
 }
 
 
