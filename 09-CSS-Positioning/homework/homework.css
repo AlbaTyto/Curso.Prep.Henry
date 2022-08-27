@@ -61,9 +61,10 @@ archivo en cualquiera de estas carpetas, estás en el lugar equivocado.
 }
 #elementoDos {
     align-self: center;
+    order: 3;
 }
 #elementoCuatro {
     position: absolute;
-    align-self:flex-end;
+    align-self:center;
     top: 33%;
 }
